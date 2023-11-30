@@ -1,0 +1,14 @@
+.index-nav{
+  padding: rem(53px 0 40px);
+
+  >form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+
+    .btn{
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  }
+}

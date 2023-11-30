@@ -1,0 +1,77 @@
+.component-welcome-buble, .component-member-buble, .component-service-buble{
+  @extend %buble;
+}
+
+.component-welcome{
+  margin-bottom: rem(16px);
+
+  &__grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    column-gap: rem(16px);
+    row-gap: rem(16px);
+  }
+
+  .component-member-buble{
+    background-color: #3F71AB;
+    color: #ffffff;
+  }
+
+  .component-service-buble{
+    background-color: #51AC9F;
+    color: #ffffff;
+    .svg{
+      path, ellipse{
+        stroke: #ffffff;
+        fill:#ffffff;
+      }
+    }
+  }
+
+  .buble-colors{
+    display: flex;
+    flex-direction: column;
+    .svg{
+      path, ellipse{
+        stroke: #ffffff;
+      }
+    }
+    h3{
+      margin-bottom: rem(5px);
+    }
+
+    .btn{
+      margin-top: auto;
+      background-color: transparent;
+      padding-left: 0;
+      font-size: rem(15px);
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      .carret{
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .date{
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: rem(10px 15px);
+    font-size: rem(13px);
+    display: inline-block;
+    margin-bottom: rem(15px);
+    i{
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+  .user{
+    font-size: rem(42px);
+    font-family: $header__fontname;
+    margin-bottom: rem(20px);
+  }
+}

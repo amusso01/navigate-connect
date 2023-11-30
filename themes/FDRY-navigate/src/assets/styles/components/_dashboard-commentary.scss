@@ -1,0 +1,29 @@
+.component-latest-commentary{
+  margin-top: rem(30px);
+
+  h3{
+    margin-bottom: rem(16px);
+  }
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: rem(16px);
+    row-gap: rem(16px);
+    margin-bottom: rem(30px);
+  }
+
+  .btn{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link-container{
+    text-align: center;
+  }
+
+  .excerpt{
+    display: none;
+  }
+
+}

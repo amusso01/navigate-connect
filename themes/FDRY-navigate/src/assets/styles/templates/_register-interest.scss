@@ -1,0 +1,81 @@
+.register-interest-main{
+
+  .register-interest__grid{
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+  }
+
+  .register-interest__info{
+    background-image: url('./../images/register.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-height: rem(675px);
+
+    &::after{
+      z-index: 0;
+      @include pseudo;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#2D4B6F , 0.4);
+    }
+
+    .info-buble{
+      z-index: 1;
+      background-color: #F7F7F7;
+      max-width: rem(400px);
+      padding: rem(33px 37px);
+      border-radius: 20px;
+
+      h3{
+        margin-bottom: rem(10px);
+      }
+
+      .excerpt{
+        padding-left: 10px;
+        position: relative;
+        margin-bottom: rem(27px);
+
+        &::before{
+          @include pseudo;
+          width: 1px;
+          height: 100%;
+          background: #000000;
+          left: 0;
+          top: 0;
+        }
+      }
+
+      .sectors{
+        display: flex;
+        align-items: center;
+        i{
+          display: inline-block;
+          margin-right: rem(6px);
+        }
+  
+        .sector-buble{
+          font-size: rem(10.9px);
+          margin-right: rem(5px);
+          padding: rem(6px 15px);
+          border-radius: 14px;
+  
+          &:last-of-type{
+            margin-right: 0;
+          }
+        }
+      }
+      .service-deatails{
+        >p{
+          font-size: rem(13px);
+          margin-bottom: rem(5px);
+        }
+      }
+    }
+  }
+
+}

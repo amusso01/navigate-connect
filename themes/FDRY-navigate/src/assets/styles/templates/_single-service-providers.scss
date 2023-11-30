@@ -1,0 +1,41 @@
+.single-service-main{
+  padding: rem(55px 0 100px);
+
+  .back{
+    margin-bottom: rem(38px);
+    a{
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+    i{
+      position: relative;
+      top: -3px;
+      svg{
+        width: 12px;
+        height: auto;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .content{
+    max-width: rem(1034px);
+    margin: auto;
+
+    h1{
+      margin-bottom: rem(40px);
+    }
+  }
+
+  .single-service__contact-link{
+    margin-top: rem(60px);
+
+    display: flex;
+    justify-content: center;
+
+    .btn{
+      justify-content: center;
+    }
+  }
+}

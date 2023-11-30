@@ -1,0 +1,127 @@
+.single-deal-main{
+  padding: rem(55px 0 100px);
+
+  .back{
+    margin-bottom: rem(38px);
+    a{
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+    i{
+      position: relative;
+      top: -3px;
+      svg{
+        width: 12px;
+        height: auto;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .content{
+    max-width: rem(1034px);
+    margin: auto;
+
+    h1{
+      margin-bottom: rem(40px);
+    }
+  }
+
+  .short-descritpion, .singel-deal__row{
+    margin-bottom: rem(25px);
+
+    &.column-2{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .sectors{
+    display: flex;
+    align-items: center;
+    i{
+      display: inline-block;
+      margin-right: rem(6px);
+    }
+
+    .sector-buble{
+      font-size: rem(10.9px);
+      margin-right: rem(5px);
+      padding: rem(6px 15px);
+      border-radius: 14px;
+
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .content-wrapper{
+    h3 + p {
+      margin-top: 15px;
+    }
+  }
+
+  .deal-info-buble{
+    background-color: #F7F7F7;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: rem(35px);
+    border-radius: 20px;
+    margin-bottom: rem(35px);
+  }
+
+  .single-deal__contact-link{
+    margin-top: rem(60px);
+
+    display: flex;
+    justify-content: center;
+
+    .btn{
+      justify-content: center;
+    }
+  }
+
+  .deal-details__info{
+    .title{
+      font-size: rem(13px);
+      margin-bottom: rem(5px);
+      font-weight: 400;
+    }
+    p{
+      font-size: rem(14px);
+      font-weight: 600;
+    }
+
+   .buble{
+    display: inline-block;
+    font-size: rem(10.9px);
+    padding: rem(6px 15px);
+    border-radius: 14px;
+    font-weight: 400;
+   }
+
+   &.fee{
+    .buble{
+      background-color: #C3D0E6;
+    }
+    svg{
+      height: 15px;
+    }
+   }
+
+   &.location{
+    .buble{
+      background-color: #95D8AA;
+    }
+   }
+  }
+
+  .deal-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-bottom: rem(12px);
+  }
+}

@@ -1,0 +1,39 @@
+.btn {
+	min-width: $button__width;
+	min-height: $button__height;
+	background-color: $button__color;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	color: $color__bright;
+	border-radius: $button__radius;
+	line-height: 0px;
+	font-size: rem(13px);
+	padding: rem(10px 26px);
+	transition: all .3s;
+	&:hover {
+		text-decoration: none;
+		background-color: #2C4C70;
+	}
+
+	i{
+		display: inline-block;
+		margin-right: 6px;
+	}
+
+	.carret{
+		margin-right: 0;
+		margin-left: auto;
+		transform: rotate(-90deg);
+		position: relative;
+		top: 2px;
+
+		svg{
+			height: rem(6px);
+			path{
+				stroke: #ffffff;
+			}
+		}
+	}
+}

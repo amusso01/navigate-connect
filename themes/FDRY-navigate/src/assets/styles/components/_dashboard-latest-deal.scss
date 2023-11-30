@@ -1,0 +1,104 @@
+.dashboard-main-buble{
+  @extend %buble;
+  margin-bottom: rem(16px);
+
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(12px);
+  }
+
+  .dashboard-inner-buble{
+    background-color: #FEFEFE;
+    border-radius: 5px;
+    padding: rem(18px 15px);
+
+    .deal-title{
+      font-size: rem(18px);
+      font-family: $header__fontname;
+      .divider{
+        display: inline-block;
+        margin: rem(0px 17px);
+        height: rem(13px);
+        width: 1px;
+        background-color: #000000;
+      }
+
+      .money{
+        font-family: $text__fontname;
+        font-size: rem(15px);
+      }
+    }
+
+    .deal-deatails{
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(10px);
+    }
+
+    .sectors{
+      display: flex;
+      align-items: center;
+      i{
+        display: inline-block;
+        margin-right: rem(6px);
+      }
+
+      .sector-buble{
+        font-size: rem(10.9px);
+        margin-right: rem(5px);
+        padding: rem(6px 15px);
+        border-radius: 14px;
+
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .buble-info{
+    margin-bottom: rem(25px);
+
+    h3{
+      margin-bottom: rem(2px);
+      i{
+        display: inline-block;
+        margin-right: rem(10px);
+      }
+      svg{
+        height: rem(17px);
+      }
+    }
+
+    p{
+      font-size: rem(13px);
+    }
+  }
+
+  .btn{
+    min-width: auto;
+    color: #000000;
+    background-color: transparent;
+    padding: 0;
+    min-height: auto;
+    padding-left: 0;
+    padding-top: rem(16px);
+    font-size: rem(15px);
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+    i{
+      svg{
+        path{
+          stroke: #000000;
+        }
+      }
+    }
+    .carret{
+      margin-left: rem(8px);
+    }
+  }
+}

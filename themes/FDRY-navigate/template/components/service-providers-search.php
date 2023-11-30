@@ -1,0 +1,39 @@
+<?php
+/**
+ * SEARCH BAR for service providers
+ * 
+ * @author Andrea Musso
+ * 
+ * @package Foundry
+ */
+
+ $sectorTerms = get_terms([
+  'taxonomy' => 'sector',
+  'hide_empty' => false,
+]);
+
+$getSector='';
+if($_GET){
+  $getSector = $_GET['sector'];
+}
+ ?>
+
+
+
+ <div class="search-bar__container">
+  <div class="content-block">
+    <p class="h2">Filter</p>
+    <form method="GET" action="<?= site_url('/archives/service-provider') ?>"  id="sortForm" >
+
+      <select name="sector"  id="sector">
+        <option value="" data-i18n-key="search-by-sector">Sectors/Industry</option>
+        <?php foreach($sectorTerms as $sector) : ?>
+          <option value="<?php echo $sector->slug ?>" <?= $sector->slug === $getSector ? 'selected' : '' ?> ><?php echo $sector->name ?></option>
+        <?php endforeach; ?>
+      </select>
+
+      <button type="submit"  data-i18n-key="apply" >Apply</button>
+    </form>
+
+  </div>
+ </div>

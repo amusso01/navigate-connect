@@ -1,0 +1,26 @@
+.features{
+
+  .block-title-text{
+    background-color: #F7F7F7;
+    padding: rem(56px 0 63px);
+  }
+
+  .block-cards-grid{
+    background-color: #F7F7F7;
+    padding-bottom: rem(67px);
+
+    .block-cards-grid__single-card{
+      &:last-of-type{
+        svg{
+          path{
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+  }
+
+  #investor{
+    background-color:#F7F7F7 ;
+  }
+}

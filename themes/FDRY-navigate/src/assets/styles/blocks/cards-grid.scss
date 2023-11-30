@@ -1,0 +1,48 @@
+.block-cards-grid{
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: rem(16px);
+  }
+
+  &__single-card{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: rem(36px) ;
+    border-radius: 20px;
+
+    svg{
+      width: auto;
+      height: 27px;
+      path{
+        stroke: #ffffff;
+      }
+    }
+
+    h3{
+      margin-top: rem(35px);
+    }
+
+    .content{
+      margin-top: rem(5px);
+      margin-bottom: rem(25px);
+    }
+
+    .btn{
+      margin-top: auto;
+      padding-left: 0;
+      background-color: transparent;
+      font-size: rem(15px);
+
+      &:hover{
+        text-decoration: underline;
+      }
+
+      .carret{
+        margin-left: 12px;
+      }
+    }
+
+  }
+}

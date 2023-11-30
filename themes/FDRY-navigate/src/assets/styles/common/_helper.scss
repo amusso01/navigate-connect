@@ -1,0 +1,70 @@
+/* PRESETS
+/––––––––––––––––––––––––*/
+
+.content-block {
+	//create the "container" with this applied to any row or any 100% width element
+	padding: rem(0 20px);
+
+	max-width: rem(1980px);
+	margin-left: auto;
+	margin-right: auto;
+
+	@include media(">phone") {
+		padding: rem(0 20px);
+	}	
+	@include media(">tablet") {
+		padding: rem(0 35px);
+	}	
+	@include media(">desktop") {
+		padding: rem(0 55px);
+	}	
+	@include media(">wideScreen") {
+		padding: rem(0 85px);
+	}	
+}
+
+// .content-max{
+// 	max-width: 2160px;
+// 	margin-left: auto;
+// 	margin-right: auto ;
+// }
+
+.noscroll {
+	overflow: hidden;
+}
+
+:focus {
+	outline: 0;
+}
+
+
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+img[data-sizes="auto"] { display: block; width: 100%; }
+
+%cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+%img-container{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+%buble{
+	border-radius: 20px;
+	background-color: #F7F7F7;
+	padding: rem(40px 27px);
+}
